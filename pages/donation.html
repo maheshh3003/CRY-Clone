@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Donate - CRY India - Transform Lives Today</title>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/donation.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Rubik:300,400,500,700,900"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Background Video -->
+		<div class="video-background">
+			<video autoplay muted loop playsinline>
+				<source
+					src="https://www.cry.org/wp-content/uploads/cry-hero-video.mp4"
+					type="video/mp4"
+				/>
+			</video>
+			<div class="video-overlay"></div>
+		</div>
+
+		<!-- Header Section -->
+		<header>
+			<div class="header-wrapper">
+				<div class="menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="../index.html" class="logo-header">
+					<img
+						src="https://www.cry.org/wp-content/themes/cry/images/logo.gif"
+						alt="CRY Logo"
+						class="main-logo"
+					/>
+				</a>
+				<div class="nav-wrapper">
+					<nav class="nav-primary">
+						<ul class="menu">
+							<li><a href="../index.html">Home</a></li>
+							<li class="has-submenu">
+								<a href="blog.html">Blog</a>
+							</li>
+							<li class="has-submenu">
+								<a href="adoptaproject.html">Adopt a Project</a>
+							</li>
+							<li class="has-submenu">
+								<a href="giftasmile.html">Gift a Sile</a>
+							</li>
+							<li class="has-submenu">
+								<a href="getinvolved.html">Get Involved</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="nav-contact">
+					<a href="mailto:writetous@crymail.org" class="contact-item">
+						<i class="fa fa-envelope"></i>
+						<span>writetous@crymail.org</span>
+					</a>
+					<a href="tel:+919115911500" class="contact-item">
+						<i class="fa fa-phone"></i>
+						<span>+91 9115 9115 00</span>
+					</a>
+				</div>
+
+				<div class="nav-cta">
+					<a href="#" class="btn btn-primary">
+						<i class="fas fa-heart"></i>
+						Donate Now
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="donation-options">
+				<h1>Make a Donation</h1>
+				<p>
+					Your contribution can make a significant impact on a child's life.
+					Choose an option below or enter a custom amount.
+				</p>
+
+				<div class="donation-widget">
+					<h2>Select Donation Type</h2>
+					<div class="donation-type-options">
+						<button class="type-button active" data-type="one-time">
+							<i class="fas fa-hand-holding-heart"></i>
+							<span>One-Time Donation</span>
+							<small>Make a single donation</small>
+						</button>
+						<button class="type-button" data-type="recurring">
+							<i class="fas fa-sync-alt"></i>
+							<span>Monthly Recurring</span>
+							<small>Auto-debit every month</small>
+						</button>
+					</div>
+
+					<h3>Select Donation Amount</h3>
+					<div class="amount-options">
+						<button class="amount-button" data-amount="50">
+							$50 - Educate a child for 1 month
+						</button>
+						<button class="amount-button" data-amount="100">
+							$100 - Feed a child for 1 month
+						</button>
+						<button class="amount-button" data-amount="150">
+							$150 - Buy medicines for a child for 1 month
+						</button>
+					</div>
+					<div class="custom-amount">
+						<label for="custom-amount-input">Enter Custom Amount ($):</label>
+						<input type="number" id="custom-amount-input" min="1" />
+					</div>
+					<button id="donate-button">Donate Now</button>
+				</div>
+			</section>
+		</main>
+
+		<footer style="text-align: center">
+			<p>&copy; 2025 CRY. All rights reserved.</p>
+		</footer>
+
+		<script src="../scripts/script.js"></script>
+		<script src="../scripts/donation.js"></script>
+	</body>
+</html>
