@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Get Involved - Volunteer with CRY India</title>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/getinvolved.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Rubik:300,400,500,700,900"
+			rel="stylesheet"
+		/>
+		<!-- Supabase Client -->
+		<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+	</head>
+	<body>
+		<!-- Background Video -->
+		<div class="video-background">
+			<video autoplay muted loop playsinline>
+				<source
+					src="https://www.cry.org/wp-content/uploads/cry-hero-video.mp4"
+					type="video/mp4"
+				/>
+			</video>
+			<div class="video-overlay"></div>
+		</div>
+
+		<!-- Header Section -->
+		<header>
+			<div class="header-wrapper">
+				<div class="menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="../index.html" class="logo-header">
+					<img
+						src="https://www.cry.org/wp-content/themes/cry/images/logo.gif"
+						alt="CRY Logo"
+						class="main-logo"
+					/>
+				</a>
+				<div class="nav-wrapper">
+					<nav class="nav-primary">
+						<ul class="menu">
+							<li><a href="../index.html">Home</a></li>
+							<li class="has-submenu"><a href="blog.html">Blog</a></li>
+							<li class="has-submenu">
+								<a href="adoptaproject.html">Adopt a Project</a>
+							</li>
+							<li class="has-submenu">
+								<a href="giftasmile.html">Gift a smile</a>
+							</li>
+							<li class="has-submenu active">
+								<a href="getinvolved.html">Get Involved</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="nav-contact">
+					<a href="mailto:writetous@crymail.org" class="contact-item">
+						<i class="fa fa-envelope"></i>
+						<span>writetous@crymail.org</span>
+					</a>
+					<a href="tel:+919115911500" class="contact-item">
+						<i class="fa fa-phone"></i>
+						<span>+91 9115 9115 00</span>
+					</a>
+				</div>
+				<div class="nav-cta">
+					<a href="donation.html" class="btn btn-primary">
+						<i class="fas fa-heart"></i>
+						Donate Now
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="hero-involvement">
+			<div class="hero-content">
+				<h1>Get Involved with CRY</h1>
+				<p style="color: var(--background-white)">
+					Join thousands of volunteers making a difference in children's lives
+					across Indiat
+				</p>
+				<a href="#volunteer-application" class="btn btn-primary">
+					<i class="fas fa-hands-helping"></i>
+					Apply to Volunteer
+				</a>
+			</div>
+		</section>
+
+		<!-- Impact Statistics Section -->
+		<section class="impact-stats">
+			<div class="container">
+				<h2>Our Volunteer Impact</h2>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-number">10,555</div>
+						<div class="stat-label">Volunteers</div>
+						<div class="stat-icon">
+							<i class="fas fa-users"></i>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-number">1,264</div>
+						<div class="stat-label">Interns</div>
+						<div class="stat-icon">
+							<i class="fas fa-graduation-cap"></i>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-number">27,4526</div>
+						<div class="stat-label">Volunteering Hours</div>
+						<div class="stat-icon">
+							<i class="far fa-clock"></i>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-number">13</div>
+						<div class="stat-label">States</div>
+						<div class="stat-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-number">75,000</div>
+						<div class="stat-label">Children Reached</div>
+						<div class="stat-icon">
+							<i class="fas fa-child"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Why Volunteer Section -->
+		<section class="why-volunteer">
+			<div class="container">
+				<div class="section-header">
+					<h2>Why Volunteer With CRY?</h2>
+					<p>
+						Volunteering is such a simple, yet rewarding, way to support a cause
+						you care about. While there are a million reasons why you should
+						volunteer with CRY, here are our top 3 ones!
+					</p>
+				</div>
+				<div class="reasons-grid">
+					<div class="reason-card">
+						<div class="reason-icon">
+							<i class="fas fa-heart"></i>
+						</div>
+						<div class="reason-content">
+							<h3>Make Real Impact</h3>
+							<p>
+								Your work, whether on the field or behind the scenes, will help
+								us make India a better place for our children.
+							</p>
+						</div>
+					</div>
+					<div class="reason-card">
+						<div class="reason-icon">
+							<i class="fas fa-chart-line"></i>
+						</div>
+						<div class="reason-content">
+							<h3>Develop Skills</h3>
+							<p>
+								Your volunteering experience will help you develop invaluable
+								professional skills and build your leadership capabilities.
+							</p>
+						</div>
+					</div>
+					<div class="reason-card">
+						<div class="reason-icon">
+							<i class="fas fa-users-cog"></i>
+						</div>
+						<div class="reason-content">
+							<h3>Flexible Options</h3>
+							<p>
+								No matter who you are or what you do, we have a wide range of
+								volunteering options for you.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Volunteering Programs Section -->
+		<section class="volunteering-programs">
+			<div class="container">
+				<div class="section-header">
+					<h2>Our Volunteering Programs</h2>
+					<p>
+						Choose from our diverse range of volunteering opportunities that
+						suit your schedule and skills
+					</p>
+				</div>
+				<div class="programs-grid">
+					<div class="program-card">
+						<div class="program-image">
+							<img
+								src="https://www.cry.org/wp-content/uploads/send-children-back-to-school.webp"
+								alt="Field Volunteering"
+							/>
+							<div class="program-badge">
+								<i class="fas fa-map-pin"></i>
+								Onground & Online
+							</div>
+						</div>
+						<div class="program-content">
+							<h3>Field Volunteering</h3>
+							<p>
+								Work directly with children and communities in the field. Engage
+								in educational activities, health camps, and community
+								development programs.
+							</p>
+							<ul class="program-features">
+								<li>
+									<i class="fas fa-check"></i> Direct interaction with children
+								</li>
+								<li>
+									<i class="fas fa-check"></i> Field visits and community work
+								</li>
+								<li>
+									<i class="fas fa-check"></i> Educational support activities
+								</li>
+								<li>
+									<i class="fas fa-check"></i> Health and nutrition programs
+								</li>
+							</ul>
+							<div class="program-details">
+								<span class="detail-item">
+									<i class="fas fa-clock"></i>
+									20+ hours/month
+								</span>
+								<span class="detail-item">
+									<i class="fas fa-calendar"></i>
+									6+ months commitment
+								</span>
+							</div>
+							<button class="btn btn-outline apply-btn" data-program="onground">
+								Apply Now
+							</button>
+						</div>
+					</div>
+
+					<div class="program-card">
+						<div class="program-image">
+							<img
+								src="https://www.cry.org/wp-content/uploads/poori-padhai-homecard.webp"
+								alt="Hybrid Volunteering"
+							/>
+							<div class="program-badge">
+								<i class="fas fa-laptop"></i>
+								Onground Online Hybrid
+							</div>
+						</div>
+						<div class="program-content">
+							<h3>Hybrid Volunteering</h3>
+							<p>
+								Combine online and offline activities. Perfect for those who
+								want flexibility while making a meaningful impact through both
+								digital and field work.
+							</p>
+							<ul class="program-features">
+								<li>
+									<i class="fas fa-check"></i> Content creation and social media
+								</li>
+								<li><i class="fas fa-check"></i> Virtual mentoring sessions</li>
+								<li>
+									<i class="fas fa-check"></i> Event organization and support
+								</li>
+								<li>
+									<i class="fas fa-check"></i> Occasional field activities
+								</li>
+							</ul>
+							<div class="program-details">
+								<span class="detail-item">
+									<i class="fas fa-clock"></i>
+									10+ hours/month
+								</span>
+								<span class="detail-item">
+									<i class="fas fa-calendar"></i>
+									3+ months commitment
+								</span>
+							</div>
+							<button class="btn btn-outline apply-btn" data-program="hybrid">
+								Apply Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section class="testimonials">
+			<div class="container">
+				<div class="section-header">
+					<h2>What Our Volunteers Say</h2>
+					<p>
+						Hear from our amazing volunteers about their experiences with CRY
+					</p>
+				</div>
+				<div class="testimonials-slider">
+					<div class="testimonial-card active">
+						<div class="testimonial-image">
+							<img
+								src="https://www.cry.org/wp-content/uploads/help-expecting-mothers.webp"
+								alt="Priya Sharma"
+							/>
+						</div>
+						<div class="testimonial-content">
+							<div class="testimonial-quote">
+								<i class="fas fa-quote-left"></i>
+								<p>
+									"Volunteering with CRY has been the most rewarding experience
+									of my life. Seeing the smile on a child's face when they learn
+									something new is priceless. It has taught me patience,
+									empathy, and the power of small actions."
+								</p>
+							</div>
+							<div class="testimonial-author">
+								<h4>Priya Sharma</h4>
+								<span>Education Volunteer, Mumbai</span>
+								<div class="testimonial-duration">
+									<i class="fas fa-calendar-alt"></i>
+									Volunteering since 2022
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testimonial-card">
+						<div class="testimonial-image">
+							<img
+								src="https://www.cry.org/wp-content/uploads/help-stop-child-labour-card.webp"
+								alt="Rajesh Kumar"
+							/>
+						</div>
+						<div class="testimonial-content">
+							<div class="testimonial-quote">
+								<i class="fas fa-quote-left"></i>
+								<p>
+									"As a working professional, the hybrid volunteering program
+									was perfect for me. I could contribute through online
+									activities and occasionally visit the field. It's amazing how
+									technology can amplify our impact."
+								</p>
+							</div>
+							<div class="testimonial-author">
+								<h4>Rajesh Kumar</h4>
+								<span>Digital Marketing Volunteer, Bangalore</span>
+								<div class="testimonial-duration">
+									<i class="fas fa-calendar-alt"></i>
+									Volunteering since 2021
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testimonial-card">
+						<div class="testimonial-image">
+							<img
+								src="https://www.cry.org/wp-content/uploads/support-kitchen-gardens.webp"
+								alt="Anita Desai"
+							/>
+						</div>
+						<div class="testimonial-content">
+							<div class="testimonial-quote">
+								<i class="fas fa-quote-left"></i>
+								<p>
+									"The training and support provided by CRY is exceptional. They
+									prepare you well for the field work and ensure you have all
+									the resources needed. I've grown both personally and
+									professionally through this journey."
+								</p>
+							</div>
+							<div class="testimonial-author">
+								<h4>Anita Desai</h4>
+								<span>Health Program Volunteer, Delhi</span>
+								<div class="testimonial-duration">
+									<i class="fas fa-calendar-alt"></i>
+									Volunteering since 2020
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial-nav">
+					<button class="nav-btn prev-btn" onclick="changeTestimonial(-1)">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<div class="nav-dots">
+						<span class="dot active" onclick="goToTestimonial(1)"></span>
+						<span class="dot" onclick="goToTestimonial(2)"></span>
+						<span class="dot" onclick="goToTestimonial(3)"></span>
+					</div>
+					<button class="nav-btn next-btn" onclick="changeTestimonial(1)">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Volunteer Application Section -->
+		<!-- <section id="volunteer-application" class="volunteer-application">
+			<div class="container">
+				<div class="application-content">
+					<div class="application-info">
+						<h2>Ready to Make a Difference?</h2>
+						<p>
+							Join our community of passionate volunteers and help create a
+							better future for India's children.
+						</p>
+						<div class="application-benefits">
+							<div class="benefit-item">
+								<i class="fas fa-certificate"></i>
+								<span>Certificate of Appreciation</span>
+							</div>
+							<div class="benefit-item">
+								<i class="fas fa-users"></i>
+								<span>Community of Like-minded People</span>
+							</div>
+							<div class="benefit-item">
+								<i class="fas fa-graduation-cap"></i>
+								<span>Skill Development Opportunities</span>
+							</div>
+							<div class="benefit-item">
+								<i class="fas fa-heart"></i>
+								<span>Personal Satisfaction</span>
+							</div>
+						</div>
+					</div>
+					<div class="application-form">
+						<form id="volunteerForm">
+							<h3>Volunteer Application Form</h3>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="firstName">First Name *</label>
+									<input type="text" id="firstName" name="firstName" required />
+								</div>
+								<div class="form-group">
+									<label for="lastName">Last Name *</label>
+									<input type="text" id="lastName" name="lastName" required />
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="email">Email Address *</label>
+									<input type="email" id="email" name="email" required />
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone Number *</label>
+									<input type="tel" id="phone" name="phone" required />
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="city">City *</label>
+									<input type="text" id="city" name="city" required />
+								</div>
+								<div class="form-group">
+									<label for="state">State *</label>
+									<select id="state" name="state" required>
+										<option value="">Select State</option>
+										<option value="maharashtra">Maharashtra</option>
+										<option value="delhi">Delhi</option>
+										<option value="karnataka">Karnataka</option>
+										<option value="gujarat">Gujarat</option>
+										<option value="rajasthan">Rajasthan</option>
+										<option value="uttar-pradesh">Uttar Pradesh</option>
+										<option value="west-bengal">West Bengal</option>
+										<option value="tamil-nadu">Tamil Nadu</option>
+										<option value="kerala">Kerala</option>
+										<option value="punjab">Punjab</option>
+										<option value="haryana">Haryana</option>
+										<option value="bihar">Bihar</option>
+										<option value="odisha">Odisha</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="program">Preferred Program *</label>
+								<select id="program" name="program" required>
+									<option value="">Select Program</option>
+									<option value="onground">
+										Field Volunteering (Onground & Online)
+									</option>
+									<option value="hybrid">
+										Hybrid Volunteering (Onground Online Hybrid)
+									</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="experience">Previous Volunteering Experience</label>
+								<textarea
+									id="experience"
+									name="experience"
+									rows="3"
+									placeholder="Tell us about any previous volunteering experience..."
+								></textarea>
+							</div>
+							<div class="form-group">
+								<label for="motivation"
+									>Why do you want to volunteer with CRY? *</label
+								>
+								<textarea
+									id="motivation"
+									name="motivation"
+									rows="4"
+									required
+									placeholder="Share your motivation and what you hope to achieve..."
+								></textarea>
+							</div>
+							<div class="form-group">
+								<label for="availability">Availability *</label>
+								<select id="availability" name="availability" required>
+									<option value="">Select Availability</option>
+									<option value="weekends">Weekends Only</option>
+									<option value="weekdays">Weekdays</option>
+									<option value="flexible">Flexible</option>
+									<option value="full-time">Full Time</option>
+								</select>
+							</div>
+							<div class="form-group checkbox-group">
+								<label class="checkbox-label">
+									<input type="checkbox" id="terms" name="terms" required />
+									<span class="custom-checkbox"></span>
+									<span class="checkbox-text"
+										>I agree to CRY's terms and conditions and volunteer
+										guidelines *</span
+									>
+								</label>
+							</div>
+							<div class="form-group checkbox-group">
+								<label class="checkbox-label">
+									<input type="checkbox" id="newsletter" name="newsletter" />
+									<span class="custom-checkbox"></span>
+									<span class="checkbox-text"
+										>I would like to receive updates about CRY's work and
+										volunteer opportunities</span
+									>
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary submit-btn">
+								<i class="fas fa-paper-plane"></i>
+								Submit Application
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- Call to Action Section -->
+		<!-- <section class="cta-section">
+			<div class="container">
+				<div class="cta-content">
+					<div class="cta-text">
+						<h2>Ready to Start Your Volunteering Journey?</h2>
+						<p>
+							Join our community of dedicated volunteers and make a lasting
+							impact on children's lives across India. Your time and skills can
+							help create a brighter future for countless children.
+						</p>
+						<div class="cta-stats">
+							<div class="cta-stat">
+								<span class="stat-number">24/7</span>
+								<span class="stat-text">Support Available</span>
+							</div>
+							<div class="cta-stat">
+								<span class="stat-number">Free</span>
+								<span class="stat-text">Training Provided</span>
+							</div>
+							<div class="cta-stat">
+								<span class="stat-number">Flexible</span>
+								<span class="stat-text">Schedule Options</span>
+							</div>
+						</div>
+					</div>
+					<div class="cta-actions">
+						<a href="#volunteer-application" class="btn btn-primary cta-btn">
+							<i class="fas fa-hands-helping"></i>
+							Apply Now
+						</a>
+						<a
+							href="mailto:volunteer@crymail.org"
+							class="btn btn-outline cta-btn"
+						>
+							<i class="fas fa-envelope"></i>
+							Contact Us
+						</a>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<div class="footer-logo">
+							<img
+								src="https://www.cry.org/wp-content/themes/cry/images/logo.gif"
+								alt="CRY Logo"
+							/>
+						</div>
+						<p>
+							CRY - Child Rights and You is an Indian non-governmental
+							organization that works towards ensuring development, protection
+							and participation rights of India's underprivileged children.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="donation.html">Donate</a></li>
+							<li><a href="getinvolved.html">Get Involved</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Contact Info</h4>
+						<div class="contact-info">
+							<p><i class="fas fa-envelope"></i> writetous@crymail.org</p>
+							<p><i class="fas fa-phone"></i> +91 9115 9115 00</p>
+							<p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 CRY - Child Rights and You. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../scripts/getinvolved.js"></script>
+	</body>
+</html>
