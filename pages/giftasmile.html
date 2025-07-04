@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gift a Smile - CRY India - Spread Joy Through Donations</title>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/giftasmile.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Rubik:300,400,500,700,900"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Background Video -->
+		<div class="video-background">
+			<video autoplay muted loop playsinline>
+				<source
+					src="https://www.cry.org/wp-content/uploads/cry-hero-video.mp4"
+					type="video/mp4"
+				/>
+			</video>
+			<div class="video-overlay"></div>
+		</div>
+
+		<!-- Header Section -->
+		<header>
+			<div class="header-wrapper">
+				<div class="menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="../index.html" class="logo-header">
+					<img
+						src="https://www.cry.org/wp-content/themes/cry/images/logo.gif"
+						alt="CRY Logo"
+						class="main-logo"
+					/>
+				</a>
+				<div class="nav-wrapper">
+					<nav class="nav-primary">
+						<ul class="menu">
+							<li><a href="../index.html">Home</a></li>
+							<li class="has-submenu">
+								<a href="blog.html">Blog</a>
+							</li>
+							<li class="has-submenu">
+								<a href="adoptaproject.html">Adopt a Project</a>
+							</li>
+							<li class="has-submenu active">
+								<a href="giftasmile.html">Gift a Smile</a>
+							</li>
+							<li class="has-submenu">
+								<a href="getinvolved.html">Get Involved</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="nav-contact">
+					<a href="mailto:writetous@crymail.org" class="contact-item">
+						<i class="fa fa-envelope"></i>
+						<span>writetous@crymail.org</span>
+					</a>
+					<a href="tel:+919115911500" class="contact-item">
+						<i class="fa fa-phone"></i>
+						<span>+91 9115 9115 00</span>
+					</a>
+				</div>
+				<div class="nav-cta">
+					<a href="donation.html" class="btn btn-primary">
+						<i class="fas fa-heart"></i>
+						Donate Now
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main class="gift-smile-main">
+			<!-- Hero Section -->
+			<section class="hero-section">
+				<div class="container">
+					<div class="hero-content">
+						<h1>Gift <em style="color: var(--primary-orange)">a Smile</em></h1>
+						<p style="color: var(--background-white)">
+							Spread joy and make a difference in a child's life. Your donation
+							can bring hope and happiness to those who need it most.
+						</p>
+						<div class="smile-emoji">😊</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Donation Section -->
+			<section class="donation-section">
+				<div class="container">
+					<div class="donation-card">
+						<h2>Make a Donation</h2>
+						<p>Choose an amount to gift a smile today</p>
+
+						<div class="donation-form">
+							<div class="amount-buttons">
+								<button class="amount-btn" data-amount="500">₹500</button>
+								<button class="amount-btn" data-amount="1000">₹1000</button>
+								<button class="amount-btn" data-amount="2000">₹2000</button>
+								<button class="amount-btn" data-amount="5000">₹5000</button>
+							</div>
+
+							<div class="custom-amount">
+								<input
+									type="number"
+									id="customAmount"
+									placeholder="Enter custom amount"
+									min="100"
+								/>
+								<span class="currency">₹</span>
+							</div>
+
+							<div class="donor-info">
+								<input
+									type="text"
+									id="donorName"
+									placeholder="Your Name"
+									required
+								/>
+								<input
+									type="email"
+									id="donorEmail"
+									placeholder="Your Email"
+									required
+								/>
+								<input
+									type="tel"
+									id="donorPhone"
+									placeholder="Your Phone Number"
+									required
+								/>
+							</div>
+
+							<button class="donate-btn" onclick="processDonation()">
+								<i class="fas fa-heart"></i>
+								Donate Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Social Media Sharing Section -->
+			<section class="social-sharing-section">
+				<div class="container">
+					<h2>Share Your Good Deed</h2>
+					<p>
+						Choose a design and share your donation on social media to inspire
+						others
+					</p>
+
+					<div class="design-cards">
+						<div class="design-card" data-design="1">
+							<div class="card-preview">
+								<div class="design-1">
+									<div class="card-header">
+										<i class="fas fa-heart"></i>
+										<h3>I Just Gifted a Smile!</h3>
+									</div>
+									<div class="card-content">
+										<p>
+											Just donated to @cryindia to help children in need. Every
+											small act of kindness counts! 💝
+										</p>
+										<div class="hashtags">
+											#GiftASmile #CRYIndia #ChildrenFirst #MakeADifference
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="select-design-btn" onclick="selectDesign(1)">
+								Select Design 1
+							</button>
+						</div>
+
+						<div class="design-card" data-design="2">
+							<div class="card-preview">
+								<div class="design-2">
+									<div class="card-header">
+										<i class="fas fa-hands-helping"></i>
+										<h3>Spreading Joy Today!</h3>
+									</div>
+									<div class="card-content">
+										<p>
+											Proud to support @cryindia in their mission to protect
+											children's rights. Together we can create change! 🌟
+										</p>
+										<div class="hashtags">
+											#SpreadJoy #CRYIndia #ChildRights #DonateForACause
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="select-design-btn" onclick="selectDesign(2)">
+								Select Design 2
+							</button>
+						</div>
+
+						<div class="design-card" data-design="3">
+							<div class="card-preview">
+								<div class="design-3">
+									<div class="card-header">
+										<i class="fas fa-sun"></i>
+										<h3>Brightening Lives!</h3>
+									</div>
+									<div class="card-content">
+										<p>
+											Every child deserves happiness! Just donated to @cryindia
+											to help make that possible. Join me! ☀️
+										</p>
+										<div class="hashtags">
+											#BrightenLives #CRYIndia #HappyChildren #GiveBack
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="select-design-btn" onclick="selectDesign(3)">
+								Select Design 3
+							</button>
+						</div>
+					</div>
+
+					<!-- Social Media Buttons -->
+					<div class="social-buttons" id="socialButtons" style="display: none">
+						<h3>Share on:</h3>
+						<div class="social-icons">
+							<button class="social-btn instagram" onclick="shareOnInstagram()">
+								<i class="fab fa-instagram"></i>
+								Instagram
+							</button>
+							<button class="social-btn facebook" onclick="shareOnFacebook()">
+								<i class="fab fa-facebook-f"></i>
+								Facebook
+							</button>
+							<button class="social-btn twitter" onclick="shareOnTwitter()">
+								<i class="fab fa-twitter"></i>
+								Twitter
+							</button>
+							<button class="social-btn linkedin" onclick="shareOnLinkedIn()">
+								<i class="fab fa-linkedin-in"></i>
+								LinkedIn
+							</button>
+							<button class="social-btn whatsapp" onclick="shareOnWhatsApp()">
+								<i class="fab fa-whatsapp"></i>
+								WhatsApp
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Live Donor Wall -->
+			<section class="donor-wall-section">
+				<div class="container">
+					<h2>Live Donor Wall</h2>
+					<p>Thank you to our amazing donors who are spreading smiles!</p>
+
+					<div class="donor-wall" id="donorWall">
+						<!-- Sample donors - will be populated dynamically -->
+						<div class="donor-card">
+							<div class="donor-avatar">
+								<img
+									src="https://ui-avatars.com/api/?name=Priya+Sharma&background=ff6b6b&color=fff&size=60"
+									alt="Priya Sharma"
+								/>
+							</div>
+							<div class="donor-info">
+								<h4>Priya Sharma</h4>
+								<p class="donation-amount">₹2,000</p>
+								<p class="donation-time">2 hours ago</p>
+							</div>
+							<div class="donor-message">
+								<i class="fas fa-quote-left"></i>
+								<p>"Happy to contribute to such a noble cause!"</p>
+							</div>
+						</div>
+
+						<div class="donor-card">
+							<div class="donor-avatar">
+								<img
+									src="https://ui-avatars.com/api/?name=Rahul+Kumar&background=4ecdc4&color=fff&size=60"
+									alt="Rahul Kumar"
+								/>
+							</div>
+							<div class="donor-info">
+								<h4>Rahul Kumar</h4>
+								<p class="donation-amount">₹1,500</p>
+								<p class="donation-time">5 hours ago</p>
+							</div>
+							<div class="donor-message">
+								<i class="fas fa-quote-left"></i>
+								<p>"Every child deserves a bright future!"</p>
+							</div>
+						</div>
+
+						<div class="donor-card">
+							<div class="donor-avatar">
+								<img
+									src="https://ui-avatars.com/api/?name=Anjali+Patel&background=45b7d1&color=fff&size=60"
+									alt="Anjali Patel"
+								/>
+							</div>
+							<div class="donor-info">
+								<h4>Anjali Patel</h4>
+								<p class="donation-amount">₹3,000</p>
+								<p class="donation-time">1 day ago</p>
+							</div>
+							<div class="donor-message">
+								<i class="fas fa-quote-left"></i>
+								<p>"Spreading smiles one donation at a time!"</p>
+							</div>
+						</div>
+
+						<div class="donor-card">
+							<div class="donor-avatar">
+								<img
+									src="https://ui-avatars.com/api/?name=Vikram+Singh&background=f7b731&color=fff&size=60"
+									alt="Vikram Singh"
+								/>
+							</div>
+							<div class="donor-info">
+								<h4>Vikram Singh</h4>
+								<p class="donation-amount">₹5,000</p>
+								<p class="donation-time">2 days ago</p>
+							</div>
+							<div class="donor-message">
+								<i class="fas fa-quote-left"></i>
+								<p>"Making a difference together!"</p>
+							</div>
+						</div>
+						<div class="donor-card">
+							<div class="donor-avatar">
+								<img
+									src="https://ui-avatars.com/api/?name=Parimal+Singh&background=f7b731&color=fff&size=60"
+									alt="Parimal Singh"
+								/>
+							</div>
+							<div class="donor-info">
+								<h4>Parimal Singh</h4>
+								<p class="donation-amount">₹5,000</p>
+								<p class="donation-time">2 days ago</p>
+							</div>
+							<div class="donor-message">
+								<i class="fas fa-quote-left"></i>
+								<p>"Making a difference together!"</p>
+							</div>
+						</div>
+						<div class="donor-card">
+							<div class="donor-avatar">
+								<img
+									src="https://ui-avatars.com/api/?name=Mahek+Agarwal&background=f7b731&color=fff&size=60"
+									alt="Mahek Agarwal"
+								/>
+							</div>
+							<div class="donor-info">
+								<h4>Mehak Agarwal</h4>
+								<p class="donation-amount">₹5,000</p>
+								<p class="donation-time">2 days ago</p>
+							</div>
+							<div class="donor-message">
+								<i class="fas fa-quote-left"></i>
+								<p>"Making a difference together!"</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="wall-stats">
+						<div class="stat-item">
+							<h3 id="totalDonors">124</h3>
+							<p>Total Donors</p>
+						</div>
+						<div class="stat-item">
+							<h3 id="totalAmount">₹2,45,780</h3>
+							<p>Total Raised</p>
+						</div>
+						<div class="stat-item">
+							<h3 id="smilesGifted">186</h3>
+							<p>Smiles Gifted</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Thank You Modal -->
+		<div id="thankYouModal" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeThankYouModal()">&times;</span>
+				<div class="modal-body">
+					<div class="success-icon">
+						<i class="fas fa-heart"></i>
+					</div>
+					<h2>Thank You for Gifting a Smile!</h2>
+					<p>
+						Your donation of <span id="donationAmount"></span> will make a real
+						difference in a child's life.
+					</p>
+					<p>Now share your good deed and inspire others to join you!</p>
+					<button class="share-now-btn" onclick="showSocialButtons()">
+						Share Now
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="../scripts/giftasmile.js"></script>
+	</body>
+</html>
