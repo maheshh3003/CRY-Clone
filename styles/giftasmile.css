@@ -1,0 +1,1302 @@
+/* Gift a Smile Page Styles */
+
+/* Video Background */
+.video-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	overflow: hidden;
+}
+
+.video-background video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	mix-blend-mode: overlay;
+}
+
+.video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+/* Main Content */
+.gift-smile-main {
+	padding-top: 100px;
+	position: relative;
+	z-index: 1;
+}
+
+/* Hero Section */
+.hero-section {
+	text-align: center;
+	padding: 60px 0;
+	color: white;
+}
+
+.hero-content h1 {
+	font-size: 3.5rem;
+	font-family: "Gloria Hallelujah", cursive;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+	font-size: 1.3rem;
+	margin-bottom: 30px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.6;
+}
+
+.smile-emoji {
+	font-size: 4rem;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-20px);
+	}
+	60% {
+		transform: translateY(-10px);
+	}
+}
+
+/* Container */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Donation Section */
+.donation-section {
+	padding: 80px 0;
+	background: rgba(255, 255, 255, 0.95);
+	margin: 40px 20px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.donation-card {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.donation-card h2 {
+	font-size: 2.5rem;
+	color: #ff6b6b;
+	margin-bottom: 15px;
+	font-family: "Gloria Hallelujah", cursive;
+}
+
+.donation-card p {
+	font-size: 1.2rem;
+	color: #666;
+	margin-bottom: 40px;
+}
+
+/* Amount Buttons */
+.amount-buttons {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+.amount-btn {
+	padding: 15px 20px;
+	border: 2px solid #ff6b6b;
+	background: white;
+	color: #ff6b6b;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.amount-btn:hover,
+.amount-btn.selected {
+	background: #ff6b6b;
+	color: white;
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+/* Custom Amount */
+.custom-amount {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.custom-amount input {
+	width: 100%;
+	padding: 15px 50px 15px 20px;
+	border: 2px solid #ddd;
+	border-radius: 50px;
+	font-size: 1.1rem;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+.custom-amount input:focus {
+	border-color: #ff6b6b;
+}
+
+.currency {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #ff6b6b;
+}
+
+/* Donor Info */
+.donor-info {
+	display: grid;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+.donor-info input {
+	padding: 15px 20px;
+	border: 2px solid #ddd;
+	border-radius: 50px;
+	font-size: 1.1rem;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+.donor-info input:focus {
+	border-color: #ff6b6b;
+}
+
+/* Donate Button */
+.donate-btn {
+	background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+	color: white;
+	border: none;
+	padding: 18px 40px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.donate-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 15px 30px rgba(255, 107, 107, 0.4);
+}
+
+/* Social Sharing Section */
+.social-sharing-section {
+	padding: 80px 0;
+	background: rgba(255, 255, 255, 0.95);
+	margin: 40px 20px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.social-sharing-section h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #ff6b6b;
+	margin-bottom: 15px;
+	font-family: "Gloria Hallelujah", cursive;
+}
+
+.social-sharing-section > .container > p {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #666;
+	margin-bottom: 50px;
+}
+
+/* Design Cards */
+.design-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.design-card {
+	background: white;
+	border-radius: 15px;
+	padding: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+	transform: translateY(-5px);
+}
+
+.card-preview {
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/* Design Styles */
+.design-1,
+.design-2,
+.design-3 {
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+.design-1 {
+	background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+}
+
+.design-2 {
+	background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.design-3 {
+	background: linear-gradient(135deg, #f7b731, #f39c12);
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.card-header i {
+	font-size: 1.5rem;
+}
+
+.card-header h3 {
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.card-content p {
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
+
+.hashtags {
+	font-size: 0.9rem;
+	opacity: 0.9;
+	font-style: italic;
+}
+
+.select-design-btn {
+	width: 100%;
+	background: #ff6b6b;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 25px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.select-design-btn:hover {
+	background: #ff5252;
+	transform: translateY(-2px);
+}
+
+.design-card.selected .select-design-btn {
+	background: #4caf50;
+}
+
+/* Social Buttons */
+.social-buttons {
+	text-align: center;
+	margin-top: 40px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 15px;
+}
+
+.social-buttons h3 {
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+	color: #333;
+}
+
+.social-icons {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+}
+
+.social-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 25px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	color: white;
+}
+
+.social-btn.instagram {
+	background: linear-gradient(
+		45deg,
+		#f09433,
+		#e6683c,
+		#dc2743,
+		#cc2366,
+		#bc1888
+	);
+}
+.social-btn.facebook {
+	background: #1877f2;
+}
+.social-btn.twitter {
+	background: #1da1f2;
+}
+.social-btn.linkedin {
+	background: #0077b5;
+}
+.social-btn.whatsapp {
+	background: #25d366;
+}
+
+.social-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Donor Wall Section */
+.donor-wall-section {
+	padding: 80px 0;
+	background: rgba(255, 255, 255, 0.95);
+	margin: 40px 20px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.donor-wall-section h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #ff6b6b;
+	margin-bottom: 15px;
+	font-family: "Gloria Hallelujah", cursive;
+}
+
+.donor-wall-section > .container > p {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #666;
+	margin-bottom: 50px;
+}
+
+/* Donor Wall */
+.donor-wall {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 25px;
+	margin-bottom: 50px;
+}
+
+.donor-card {
+	background: white;
+	border-radius: 15px;
+	padding: 25px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	border-left: 5px solid #ff6b6b;
+}
+
+.donor-card:hover {
+	transform: translateY(-5px);
+}
+
+.donor-card .donor-avatar {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.donor-card .donor-avatar img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 3px solid #ff6b6b;
+}
+
+.donor-card .donor-info {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.donor-card .donor-info h4 {
+	font-size: 1.3rem;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.donation-amount {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #ff6b6b;
+	margin-bottom: 5px;
+}
+
+.donation-time {
+	font-size: 0.9rem;
+	color: #999;
+}
+
+.donor-message {
+	background: rgba(255, 107, 107, 0.1);
+	padding: 15px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.donor-message i {
+	color: #ff6b6b;
+	margin-bottom: 10px;
+}
+
+.donor-message p {
+	font-style: italic;
+	color: #666;
+	margin: 0;
+	line-height: 1.4;
+}
+
+/* Wall Stats */
+.wall-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
+	text-align: center;
+}
+
+.stat-item {
+	background: white;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h3 {
+	font-size: 2.5rem;
+	color: #ff6b6b;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.stat-item p {
+	font-size: 1.1rem;
+	color: #666;
+	margin: 0;
+}
+
+/* Modal Styles */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+	background: white;
+	border-radius: 20px;
+	padding: 40px;
+	max-width: 500px;
+	width: 90%;
+	text-align: center;
+	position: relative;
+	animation: modalSlideUp 0.3s ease;
+}
+
+@keyframes modalSlideUp {
+	from {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: #999;
+}
+
+.close:hover {
+	color: #ff6b6b;
+}
+
+.success-icon {
+	font-size: 4rem;
+	color: #ff6b6b;
+	margin-bottom: 20px;
+}
+
+.modal-content h2 {
+	color: #ff6b6b;
+	margin-bottom: 20px;
+	font-family: "Gloria Hallelujah", cursive;
+}
+
+.modal-content p {
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.share-now-btn {
+	background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 25px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.share-now-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+/* Mobile Alert Styles */
+.mobile-alert {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.mobile-alert-content {
+	background: white;
+	border-radius: 15px;
+	padding: 25px;
+	text-align: center;
+	max-width: 300px;
+	width: 100%;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	animation: slideInAlert 0.3s ease;
+}
+
+@keyframes slideInAlert {
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.mobile-alert-content i {
+	font-size: 2rem;
+	color: #ff6b6b;
+	margin-bottom: 15px;
+}
+
+.mobile-alert-content p {
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+.mobile-alert-btn {
+	background: #ff6b6b;
+	color: white;
+	border: none;
+	padding: 10px 25px;
+	border-radius: 25px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	min-width: 80px;
+}
+
+.mobile-alert-btn:hover {
+	background: #ff5252;
+	transform: translateY(-1px);
+}
+
+/* Mobile device specific styles */
+.mobile-device .amount-btn,
+.mobile-device .select-design-btn,
+.mobile-device .social-btn,
+.mobile-device .donate-btn,
+.mobile-device .share-now-btn {
+	position: relative;
+	overflow: hidden;
+}
+
+.mobile-device .amount-btn::after,
+.mobile-device .select-design-btn::after,
+.mobile-device .social-btn::after,
+.mobile-device .donate-btn::after,
+.mobile-device .share-now-btn::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+	transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+.mobile-device .amount-btn:active::after,
+.mobile-device .select-design-btn:active::after,
+.mobile-device .social-btn:active::after,
+.mobile-device .donate-btn:active::after,
+.mobile-device .share-now-btn:active::after {
+	width: 200px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+}
+
+/* Improve touch scrolling */
+.mobile-device {
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+}
+
+.mobile-device .donor-wall,
+.mobile-device .design-cards,
+.mobile-device .social-icons {
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Better focus states for mobile */
+.mobile-device input:focus,
+.mobile-device button:focus {
+	outline: 3px solid rgba(255, 107, 107, 0.3);
+	outline-offset: 2px;
+}
+
+/* Improve mobile modal */
+@media (max-width: 768px) {
+	.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.modal-content {
+		max-height: 90vh;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.design-cards {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	.social-icons {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.donor-wall {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.gift-smile-main {
+		padding-top: 80px;
+	}
+
+	.hero-section {
+		padding: 40px 0;
+	}
+
+	.hero-content h1 {
+		font-size: 2.5rem;
+		margin-bottom: 15px;
+	}
+
+	.hero-content p {
+		font-size: 1.1rem;
+		margin-bottom: 20px;
+	}
+
+	.smile-emoji {
+		font-size: 3rem;
+	}
+
+	.donation-section,
+	.social-sharing-section,
+	.donor-wall-section {
+		padding: 60px 0;
+		margin: 30px 15px;
+	}
+
+	.donation-card h2,
+	.social-sharing-section h2,
+	.donor-wall-section h2 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+
+	.donation-card p,
+	.social-sharing-section > .container > p,
+	.donor-wall-section > .container > p {
+		font-size: 1.1rem;
+		margin-bottom: 30px;
+	}
+
+	.amount-buttons {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+
+	.amount-btn {
+		padding: 12px 15px;
+		font-size: 1.1rem;
+	}
+
+	.custom-amount input {
+		padding: 12px 45px 12px 15px;
+		font-size: 1rem;
+	}
+
+	.donor-info input {
+		padding: 12px 15px;
+		font-size: 1rem;
+	}
+
+	.donate-btn {
+		padding: 15px 30px;
+		font-size: 1.2rem;
+	}
+
+	.design-cards {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.design-card {
+		padding: 15px;
+	}
+
+	.card-header h3 {
+		font-size: 1.2rem;
+	}
+
+	.card-content p {
+		font-size: 0.95rem;
+	}
+
+	.hashtags {
+		font-size: 0.85rem;
+	}
+
+	.social-icons {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.social-btn {
+		padding: 10px 15px;
+		font-size: 1rem;
+	}
+
+	.donor-wall {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.donor-card {
+		padding: 20px;
+	}
+
+	.donor-card .donor-info h4 {
+		font-size: 1.2rem;
+	}
+
+	.donation-amount {
+		font-size: 1.3rem;
+	}
+
+	.wall-stats {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.stat-item {
+		padding: 25px;
+	}
+
+	.stat-item h3 {
+		font-size: 2rem;
+	}
+
+	.modal-content {
+		padding: 30px 20px;
+		margin: 20px;
+		width: calc(100% - 40px);
+	}
+
+	.modal-content h2 {
+		font-size: 1.5rem;
+	}
+
+	.success-icon {
+		font-size: 3rem;
+	}
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+	/* Improve touch targets */
+	.amount-btn,
+	.select-design-btn,
+	.social-btn,
+	.donate-btn,
+	.share-now-btn {
+		min-height: 44px;
+		touch-action: manipulation;
+	}
+
+	/* Better text readability on mobile */
+	body {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+
+	/* Improve form interactions */
+	input[type="number"],
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"] {
+		font-size: 16px; /* Prevent zoom on iOS */
+		-webkit-appearance: none;
+		appearance: none;
+		border-radius: 25px;
+	}
+
+	/* Better button interactions */
+	button {
+		-webkit-tap-highlight-color: transparent;
+		touch-action: manipulation;
+	}
+
+	/* Improve video background on mobile */
+	.video-background {
+		position: fixed;
+		background: rgba(0, 0, 0, 0.8);
+	}
+
+	.video-background video {
+		display: none; /* Hide video on mobile for better performance */
+	}
+
+	.video-overlay {
+		background: linear-gradient(
+			135deg,
+			rgba(255, 107, 107, 0.8),
+			rgba(255, 142, 83, 0.8)
+		);
+	}
+
+	/* Improve scrolling */
+	.gift-smile-main {
+		-webkit-overflow-scrolling: touch;
+	}
+
+	/* Better modal on mobile */
+	.modal {
+		padding: 20px;
+		align-items: flex-start;
+		padding-top: 50px;
+	}
+
+	/* Improve card layouts */
+	.donation-card,
+	.design-card,
+	.donor-card,
+	.stat-item {
+		border-radius: 12px;
+	}
+
+	/* Better spacing for mobile */
+	.hero-section {
+		padding: 30px 0;
+	}
+
+	.donation-section,
+	.social-sharing-section,
+	.donor-wall-section {
+		border-radius: 15px;
+	}
+
+	/* Improve emoji animation on mobile */
+	.smile-emoji {
+		animation: bounce 2s infinite;
+		will-change: transform;
+	}
+
+	/* Better gradient buttons on mobile */
+	.donate-btn,
+	.share-now-btn {
+		background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+		box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+	}
+
+	.donate-btn:active,
+	.share-now-btn:active {
+		transform: translateY(1px);
+	}
+
+	/* Improve social button colors on mobile */
+	.social-btn:active {
+		transform: translateY(1px);
+		opacity: 0.9;
+	}
+
+	/* Better donor wall layout on mobile */
+	.donor-wall {
+		margin-bottom: 40px;
+	}
+
+	.donor-card:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Improve stats layout */
+	.wall-stats {
+		gap: 15px;
+	}
+
+	/* Better custom amount input on mobile */
+	.custom-amount {
+		position: relative;
+	}
+
+	.custom-amount input:focus {
+		outline: none;
+		border-color: #ff6b6b;
+		box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+	}
+
+	/* Improve design card previews on mobile */
+	.card-preview {
+		border-radius: 8px;
+	}
+
+	.design-1,
+	.design-2,
+	.design-3 {
+		padding: 15px;
+	}
+
+	/* Better social sharing section on mobile */
+	.social-sharing-section {
+		overflow: hidden;
+	}
+
+	.social-buttons {
+		border-radius: 12px;
+		margin-top: 30px;
+	}
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 576px) {
+	/* Optimize for very small screens */
+	.container {
+		padding: 0 8px;
+	}
+
+	/* Better form layout on small screens */
+	.donation-form {
+		padding: 0 5px;
+	}
+
+	/* Improve button spacing */
+	.amount-buttons {
+		gap: 8px;
+	}
+
+	.donor-info {
+		gap: 10px;
+	}
+
+	/* Better typography on small screens */
+	.hero-content h1 {
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+	}
+
+	.hero-content p {
+		font-size: 0.95rem;
+		line-height: 1.4;
+	}
+
+	/* Optimize card layouts */
+	.design-cards {
+		gap: 15px;
+	}
+
+	.social-icons {
+		gap: 10px;
+	}
+
+	/* Better modal positioning */
+	.modal {
+		padding: 15px;
+		padding-top: 30px;
+	}
+
+	.modal-content {
+		margin: 0;
+		width: 100%;
+		max-width: none;
+	}
+
+	/* Improve donor wall on small screens */
+	.donor-wall {
+		gap: 15px;
+	}
+
+	.wall-stats {
+		gap: 12px;
+	}
+
+	/* Better section spacing */
+	.donation-section,
+	.social-sharing-section,
+	.donor-wall-section {
+		margin: 15px 8px;
+		padding: 30px 0;
+	}
+}
+
+/* =========================
+   Tablet (≤1024px) Styles
+   ========================= */
+@media (max-width: 1024px) {
+	/* Video background: ensure covers and doesn't overflow */
+	.video-background {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		min-height: 100vh;
+		min-width: 100vw;
+		left: 0;
+		top: 0;
+		z-index: -2;
+	}
+	.video-background video {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+	}
+	.video-overlay {
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	/* Hero section adjustments */
+	.hero-section {
+		padding: 40px 0;
+	}
+	.hero-content h1 {
+		font-size: 2.5rem;
+	}
+	.hero-content p {
+		font-size: 1.1rem;
+	}
+	.smile-emoji {
+		font-size: 3rem;
+	}
+
+	/* Donation section adjustments */
+	.donation-section {
+		padding: 60px 0;
+		margin: 30px 15px;
+	}
+	.donation-card h2 {
+		font-size: 2rem;
+	}
+	.donation-card p {
+		font-size: 1rem;
+	}
+
+	/* Amount button adjustments */
+	.amount-buttons {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+	.amount-btn {
+		padding: 12px 15px;
+		font-size: 1.1rem;
+	}
+
+	/* Custom amount input adjustments */
+	.custom-amount input {
+		padding: 12px 45px 12px 15px;
+		font-size: 1rem;
+	}
+
+	/* Donor info input adjustments */
+	.donor-info input {
+		padding: 12px 15px;
+		font-size: 1rem;
+	}
+
+	/* Donate button adjustments */
+	.donate-btn {
+		padding: 15px 30px;
+		font-size: 1.2rem;
+	}
+
+	/* Design cards adjustments */
+	.design-cards {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.design-card {
+		padding: 15px;
+	}
+	.card-header h3 {
+		font-size: 1.2rem;
+	}
+	.card-content p {
+		font-size: 0.95rem;
+	}
+	.hashtags {
+		font-size: 0.85rem;
+	}
+
+	/* Social icons adjustments */
+	.social-icons {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+	.social-btn {
+		padding: 10px 15px;
+		font-size: 1rem;
+	}
+
+	/* Donor wall adjustments */
+	.donor-wall {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.donor-card {
+		padding: 20px;
+	}
+	.donor-card .donor-info h4 {
+		font-size: 1.2rem;
+	}
+	.donation-amount {
+		font-size: 1.3rem;
+	}
+
+	/* Wall stats adjustments */
+	.wall-stats {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.stat-item {
+		padding: 25px;
+	}
+	.stat-item h3 {
+		font-size: 2rem;
+	}
+
+	/* Modal content adjustments */
+	.modal-content {
+		padding: 30px 20px;
+		margin: 20px;
+		width: calc(100% - 40px);
+	}
+	.modal-content h2 {
+		font-size: 1.5rem;
+	}
+
+	/* Success icon adjustments */
+	.success-icon {
+		font-size: 3rem;
+	}
+}
